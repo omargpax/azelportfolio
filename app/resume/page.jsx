@@ -13,6 +13,7 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 import boy from "/public/assets/casual-boy.png"
 import { skills, experience, education } from "@/data/resume"; 
+import Overview from "@/components/markdown/Overview.mdx"
 
 const Resume = () => {
   return (
@@ -34,6 +35,7 @@ const Resume = () => {
             <TabsTrigger value="experience">Experience</TabsTrigger>
             <TabsTrigger value="education">Education</TabsTrigger>
             <TabsTrigger value="skills">Skills</TabsTrigger>
+            <TabsTrigger value="stats">Stats</TabsTrigger>
             {/* picture */}
             <div className="mx-auto mt-6 hidden xl:block">
               <Image src={boy} alt="casual-boy" height={170}></Image>
@@ -135,6 +137,10 @@ const Resume = () => {
                   })}
                 </ul>
               </div>
+            </TabsContent>
+            {/*overview */}
+            <TabsContent value="stats" className="w-full h-full p-2">
+              <Overview/>
             </TabsContent>
           </div>
         </Tabs>
