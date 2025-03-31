@@ -89,7 +89,7 @@ export default async function ServiceDetail({ params }) {
                 <div className="mt-2 border-white/20 pt-4 mb-20">
                     <h3 className="text-2xl font-bold text-white mb-6">Ready to start your project?</h3>
                     <a 
-                        href="mailto:omarguerreropusma@gmail.com"
+                        href="mailto:omargpax.dev@gmail.com"
                         className="inline-block px-8 py-4 bg-purple-500 hover:bg-purple-600 text-gray-900 rounded-lg font-bold transition-colors"
                     >
                         Contact Me
