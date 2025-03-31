@@ -8,7 +8,7 @@ export const projects = [
         stack: [{ name: "Figma" }, { name: "Java (Spring)" }, { name: "Kotlin (Android)" }],
         image: "/assets/work/kundumobile.png",
         live: "",
-        github: "https://github.com/omargpx/kundu-api",
+        github: "https://github.com/omargpax/kundu-api",
     },
     {
         num: "02",
@@ -19,7 +19,7 @@ export const projects = [
         stack: [{ name: "Figma" }, { name: "JavaScript" }, { name: "Html" }, { name: "Css" }],
         image: "/assets/work/kundu-images.png",
         live: "https://kundu-images.pages.dev/",
-        github: "https://github.com/omargpx",
+        github: "https://github.com/omargpax",
     },
     {
         num: "03",

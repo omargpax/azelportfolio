@@ -18,7 +18,7 @@ export const posts = [
         image: "/assets/gallery/ui/hypr-vim.png",
         alt: "dotfiles",
         date: "OCT. 31, 2023",
-        link: "https://github.com/omargpx/linux-awesome"
+        link: "https://github.com/omargpax/linux-awesome"
     },
 ]
 
