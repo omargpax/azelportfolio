@@ -6,7 +6,7 @@ import { featurePost, posts, status } from "@/data/posts";
 const Posts = () => {
   return (
     <div className="container mx-auto font-jetbrains pb-16 px-6 md:px-0">
-      <span className="text-xl animate-pulse">Currently {status[0]}</span>
+      {/*<span className="text-xl animate-pulse">Currently {status[0]}</span>*/}
       {/* Featured Post */}
       <div className="bg-gray-900 rounded-lg overflow-hidden mb-8 mt-2 md:mt-8">
         <Link href={featurePost.link} className="flex flex-col md:flex-row">
