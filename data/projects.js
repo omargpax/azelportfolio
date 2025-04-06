@@ -1,14 +1,14 @@
 export const projects = [
     {
         num: "01",
-        category: "Kundu",
-        title: "Backend Project & Mobile",
+        category: "Creator Badge",
+        title: "Creator badge generator",
         description:
-            "The kundu project for mobile devices. a detailed version for users. it was developed with spring boot and android studio.",
-        stack: [{ name: "Figma" }, { name: "Java (Spring)" }, { name: "Kotlin (Android)" }],
-        image: "/assets/work/kundumobile.png",
-        live: "",
-        github: "https://github.com/omargpax/kundu-api",
+            "Open source 'creator-badge' project for designing unique badges that enhance your web presence as a content creator 🪪.",
+        stack: [{ name: "Nextjs" }, { name: "JS" }, { name: "Figma" }],
+        image: "/assets/work/creator-badge.png",
+        live: "https://creator-badge.vercel.app",
+        github: "https://github.com/omargpax/creator-badge",
     },
     {
         num: "02",
@@ -19,7 +19,7 @@ export const projects = [
         stack: [{ name: "Figma" }, { name: "JavaScript" }, { name: "Html" }, { name: "Css" }],
         image: "/assets/work/kundu-images.png",
         live: "https://kundu-images.pages.dev/",
-        github: "https://github.com/omargpax",
+        github: "https://github.com/omargpax/kundu-api",
     },
     {
         num: "03",
@@ -34,14 +34,13 @@ export const projects = [
     },
     {
         num: "04",
-        category: "UI/UX Design",
-        title: "Kundu Project",
+        category: "BSA Architecture",
+        title: "BSA Architecture",
         description:
-            "This was a prototype for the kundu website, an events and statistics platform.",
-        stack: [{ name: "Figma" }, { name: "Illustrator" }, { name: "Next.js" }],
-        image: "/assets/work/kgol.png",
-        live: "",
-        github: "",
+            "Generates custom backend architectures with Java and Spring Boot, based on system/client requirements.",
+        stack: [{ name: "Nextjs" }, { name: "GPT-4o" }, { name: "Java" }],
+        image: "/assets/work/bsa.png",
+        live: "https://bootstrap-sandbox-architecture.pages.dev/",
+        github: "https://github.com/citseOfficial/bootstrap-sandbox-architecture",
     },
-
 ];
