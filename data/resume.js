@@ -15,7 +15,7 @@ export const experience = {
         },
         {
             company: "IATec",
-            position: "Full Stack Developer junior",
+            position: "Full Stack Developer intern",
             duration: "2022 - 2023",
         },
     ],
