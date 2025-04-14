@@ -1,17 +1,25 @@
 export const featurePost = {
-    titleParts: [ //`Optimize tasks with <b className="text-cyan-500">@Scheduled</b> in Spring`
-        "Optimize tasks with ",
-        { text: "@Scheduled", highlight: true },
-        " in Spring"
+    titleParts: [ 
+        "creator-badge and ",
+        { text: "sound", highlight: true },
+        " player?"
     ],
-    description: "Manually managing scheduled tasks in applications is often complex and error-prone, but with Spring's @Scheduled annotation, developers can efficiently streamline and automate these tasks. This solution allows for declarative configuration of intervals, delays, and execution conditions, reducing repetitive code and improving system performance and maintainability.",
-    source: "Medium",
-    date: "DEC. 19, 2023",
-    image: "/assets/scheduled-draw.png",
-    link: "https://omargpax.medium.com/optimiza-tareas-con-scheduled-en-spring-4b4892502f46"
+    description: "🪪 Create your own badge and show it off. A few days ago, I started a small experiment: a Spotify-style embedded audio player, but with a more personal approach, designed for creators. After a few tweaks, it's ready!",
+    source: "Dev.to",
+    date: "APR. 10, 2025",
+    image: "/assets/cover-bc.jpg",
+    link: "https://dev.to/omargpax/personalised-creator-badge-and-sound-player-3134"
 }
 
 export const posts = [
+    {
+        title: "Optimize tasks with @Scheduled in Spring",
+        source: "Medium",
+        image: "/assets/scheduled-draw.png",
+        alt: "reading",
+        date: "DEC. 19, 2023",
+        link: "https://omargpax.medium.com/optimiza-tareas-con-scheduled-en-spring-4b4892502f46"
+    },
     {
         title: "Linux awesome .dotfiles",
         source: "GitHub",
