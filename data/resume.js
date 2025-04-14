@@ -25,7 +25,7 @@ export const education = {
     icon: "/assets/resume/cap.svg",
     title: "My education",
     description:
-        "Systems Engineer recently graduated from Universidad Peruana Unión, with specialization in web development, backend and UI/UX design.",
+        "Systems Engineer graduated from Universidad Peruana Unión, with specialization in web development, backend and UI/UX design.",
     items: [
         {
             institution: "Universidad Peruana Unión (UPeU)",
