@@ -25,14 +25,60 @@ const jetbrainsMono = JetBrains_Mono({
 
 export const metadata = {
   manifest: '/manifest.json',
-  title: "Developer Portfolio | @omargpax",
-  description: "Personal projects, ideas and more about @omargpax as a developer",
+  title: "Omar Guerrero | Full Stack Developer Portfolio | @omargpax",
+  description: "I'm passionate about art and music. Oh and I'm also a developer. So, if you want to share something, here I am. God bless you ☕. Personal projects, ideas and more about @omargpax as a developer",
+  author: "Omar A. Guerrero",
+  icons: {
+    icon: '/favicon.ico',
+    apple: '/logo.png',
+  },
+  openGraph: {
+    title: "Developer Portfolio | @omargpax",
+    description: "Peruvian developer specializing in modern web technologies. Check out my projects and let's collaborate!",
+    url: "https://omargpax.vercel.app",
+    siteName: "Omargpax Portfolio",
+    images: [
+      {
+        url: "/preview.png",
+        width: 1200,
+        height: 630,
+        alt: "Omargpax Portfolio Preview",
+      },
+    ],
+    locale: "en_US",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Omar Guerrero | Full Stack Developer | @omargpax",
+    description: "Check out my developer portfolio with projects at the intersection of code, art and music",
+    creator: "@omargpax",
+    images: ["/preview.png"],
+  },
+  keywords: [
+    "omargpax",
+    "omar guerrero",
+    "Full Stack Developer",
+    "Peruvian developer",
+    "Developer Portfolio",
+    "Web Developer",
+    "JavaScript Developer",
+    "React Developer",
+    "Next.js Developer",
+    "Node.js Developer",
+    "Creative Coder",
+  ].join(', '),
+  themeColor: '#000000',
+  viewport: {
+    width: 'device-width',
+    initialScale: 1,
+    maximumScale: 1,
+  },
 };
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <SEO />
       <body
         className={`${geistSans.variable} ${geistMono.variable} ${jetbrainsMono.variable} antialiased pt-[80px] md:pt-[120px] xl:pt-[150px]`}
       >
