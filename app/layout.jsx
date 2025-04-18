@@ -5,7 +5,6 @@ import { Analytics } from "@vercel/analytics/react"
 
 //components
 import Header from "@/components/Header";
-import SEO from "@/components/seo";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
