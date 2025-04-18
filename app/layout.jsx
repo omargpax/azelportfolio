@@ -24,7 +24,7 @@ const jetbrainsMono = JetBrains_Mono({
 
 export const metadata = {
   manifest: '/manifest.json',
-  title: "Omar Guerrero | Full Stack Developer Portfolio | @omargpax",
+  title: " Developer Portfolio | @omargpax",
   description: "I'm passionate about art and music. Oh and I'm also a developer. So, if you want to share something, here I am. God bless you ☕. Personal projects, ideas and more about @omargpax as a developer",
   author: "Omar A. Guerrero",
   icons: {
@@ -49,7 +49,7 @@ export const metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Omar Guerrero | Full Stack Developer | @omargpax",
+    title: "Developer Portfolio | @omargpax",
     description: "Check out my developer portfolio with projects at the intersection of code, art and music",
     creator: "@omargpax",
     images: ["/preview.png"],
@@ -58,13 +58,14 @@ export const metadata = {
     "omargpax",
     "omar guerrero",
     "Full Stack Developer",
+    "Java Developer",
     "Peruvian developer",
     "Developer Portfolio",
     "Web Developer",
     "JavaScript Developer",
     "React Developer",
     "Next.js Developer",
-    "Node.js Developer",
+    ".Net Developer",
     "Creative Coder",
   ].join(', '),
   themeColor: '#000000',
