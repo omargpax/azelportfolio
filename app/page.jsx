@@ -23,7 +23,7 @@ const Home = () => {
             </h1>
             <p className="max-w-[500px] mb-9 text-white/80 font-mono">
               I'm passionate about art and music. Oh and I'm also a developer.
-              so, if you want to share something, here I am.{" "}
+              So, if you want to share something, here I am.{" "}
               <b>God bless you ☕</b>.
             </p>
             {/* social */}
