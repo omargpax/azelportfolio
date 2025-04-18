@@ -19,7 +19,7 @@ const seoData = {
 
 function SEO() {
   return (
-    <Head>
+    <head>
       <meta name="title" content={seoData.title} />
       <meta name="author" content={seoData.author} />
       <meta name="description" content={seoData.description} />
@@ -44,7 +44,7 @@ function SEO() {
       <link rel="apple-touch-icon" sizes="120x120" href="./favicon.ico" />
       <link rel="icon" type="image/ico" sizes="32x32" href="./favicon.ico" />
       <link rel="icon" type="image/ico" sizes="16x16" href="./favicon.ico" />
-    </Head>
+    </head>
   );
 }
 
