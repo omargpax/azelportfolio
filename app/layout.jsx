@@ -23,6 +23,7 @@ const jetbrainsMono = JetBrains_Mono({
 });
 
 export const metadata = {
+  metadataBase: new URL('https://omargpax.vercel.app'),
   manifest: '/manifest.json',
   title: " Developer Portfolio | @omargpax",
   description: "I'm passionate about art and music. Oh and I'm also a developer. So, if you want to share something, here I am. God bless you ☕. Personal projects, ideas and more about @omargpax as a developer",
@@ -68,12 +69,6 @@ export const metadata = {
     ".Net Developer",
     "Creative Coder",
   ].join(', '),
-  themeColor: '#000000',
-  viewport: {
-    width: 'device-width',
-    initialScale: 1,
-    maximumScale: 1,
-  },
 };
 
 export default function RootLayout({ children }) {
