@@ -93,13 +93,6 @@ const Work = () => {
                     </TooltipProvider>
                   </Link>)}
                 </div>
-                {/* example */}
-                {project.num === "01" && (
-                  <div>
-                    <h2 className="text-xl font-bold mb-2">Example preview:</h2>
-                    <iframe src="https://creator-badge.vercel.app/badge?img=%2Favatar.jpg&username=Omargpax&site=omargpax.vercel.app&rol=Software+Engineer&bgc=blue-purple&sound=CH1LLS&ghid=omargpax&lnid=omargpax&xid=omargpax&igid=omargpax" width={400} height={145} frameBorder="0"></iframe>
-                  </div>
-                )}
               </div>
             </div>
             <div className="w-full xl:w-[50%]">
