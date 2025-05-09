@@ -7,11 +7,11 @@ import MobileNav from "./MobileNav";
 
 const Header = () =>{
     return (
-        <nav className="fixed w-full top-0 left-0 py-4 md:py-8 xl:py-10 text-white bg-gray-950 z-50 shadow-sm border-b-2 border-gray-900 px-6 md:px-0">
+        <nav className="fixed w-full top-0 left-0 py-4 md:py-6 text-white bg-gray-950 z-50 shadow-sm border-b-2 border-gray-900 px-6 md:px-4">
             <div className="container mx-auto flex justify-between items-center">
                 {/*Logo*/}
                 <Link href="/">                    
-                    <Image src={logo} alt="Logo" width={40} className="-hue-rotate-45 contrast-125 saturate-150"></Image> 
+                    <Image src={logo} alt="Logo" width={30} className="-hue-rotate-45 contrast-125 saturate-150"></Image> 
                 </Link>
 
                 {/* desktop nav & hire me button */}
