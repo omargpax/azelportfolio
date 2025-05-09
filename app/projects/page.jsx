@@ -36,9 +36,9 @@ const Work = () => {
           opacity: 1,
           transition: { delay: .4, duration: .4, ease: "easeIn" },
         }}
-        className="min-h-[67vh] flex flex-col justify-center xl:px-0 font-jetbrains px-4 md:px-0"
+        className="min-h-[67vh] flex flex-col justify-center font-jetbrains px-4 md:px-2"
       >
-        <div className="container mx-auto">
+        <div className="container mx-auto mb-12">
           <div className="flex flex-col xl:flex-row xl:gap-[30px]">
             <div className="w-full xl:w-[50%] xl:h-[460px] flex flex-col xl:justify-between order-2 xl:order-none">
               <div className="flex flex-col gap-[30px] h-[50%]">
