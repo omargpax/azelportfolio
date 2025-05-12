@@ -26,7 +26,8 @@ const Posts = () => {
               </span>
             </div>
             <p className="text-sm text-gray-700 mt-4">{featurePost.date}</p>
-            <h2 className="text-2xl font-bold line-clamp-2 text-white mt-2 md:line-clamp-2 md:text-2xl lg:text-4xl" >
+            <h2 className="text-2xl font-bold line-clamp-2 text-white mt-2 md:line-clamp-2 md:text-2xl lg:text-4xl lg:line-clamp-3
+            " >
               {featurePost.titleParts.map((part, index) =>
                 typeof part === 'string'
                   ? part

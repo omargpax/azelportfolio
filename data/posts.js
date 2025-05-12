@@ -1,10 +1,10 @@
 export const featurePost = {
     titleParts: [ 
-        "Optimize tasks with",
+        "Optimize tasks with ",
         { text: "@Scheduled", highlight: true },
         " in Spring"
     ],
-    description: "🪪 Create your own badge and show it off. A few days ago, I started a small experiment: a Spotify-style embedded audio player, but with a more personal approach, designed for creators. After a few tweaks, it's ready!",
+    description: "In the development of a personal application, small tasks became functional bottlenecks. In this article, you will discover how this simple tool can help you automate key tasks and keep your application running like clockwork.",
     source: "Medium",
     date: "DEC. 19, 2023",
     image: "/assets/scheduled-draw.png",
