@@ -12,7 +12,7 @@ const Home = () => {
   return (
     <section className="h-full px-6 md:px-4">
       <div className="container mx-auto">
-        <div className="flex flex-col xl:flex-row items-center justify-between xl:pt-8 xl:pb-24">
+        <div className="flex flex-col xl:flex-row items-center justify-between xl:pt-8 xl:pb-15">
           {/* SUMMARY */}
           <div className="text-center xl:text-left order-2 xl:order-none">
             <span className="text-xl animate-pulse">
@@ -32,7 +32,7 @@ const Home = () => {
                 <Button
                   variant="outline"
                   size="lg"
-                  className="uppercase flex items-center gap-2"
+                  className="uppercase flex items-center gap-2 cursor-pointer"
                 >
                   <span>Download CV</span>
                   <FiDownload className="text-xl" />

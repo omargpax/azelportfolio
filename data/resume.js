@@ -25,7 +25,7 @@ export const education = {
     icon: "/assets/resume/cap.svg",
     title: "My education",
     description:
-        "Systems Engineer graduated from Universidad Peruana Unión, with specialization in web development, backend and UI/UX design.",
+        "Regulated training and certifications that have allowed me to acquire the knowledge and skills necessary to develop software.",
     items: [
         {
             institution: "Universidad Peruana Unión (UPeU)",
@@ -38,7 +38,7 @@ export const education = {
 export const skills = {
     title: "My skills",
     description:
-        "In this section, you will find a compilation of the technologies that demonstrate my ability to design and develop efficient, scalable and visually appealing web applications. ",
+        "In this section you will find the technology stack that I master and use to design and develop.",
     skillList: [
         {
             icon: <FaJava />,
