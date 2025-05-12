@@ -1,50 +1,50 @@
 export const gallery = [
     {
         img: "/assets/gallery/ui/ui-portfolio.png",
-        category: "ui/ux",
+        category: "design",
     },
     {
         img: "/assets/gallery/banners/kundu-course.png",
-        category: "banner",
+        category: "design",
     },
     {
         img: "/assets/gallery/ui/gk-view.png",
         category: "os",
     },
     {
-        img: "/assets/gallery/banners/kundu-banner.png",
-        category: "banner",
+        img: "/assets/gallery/gol_expo.jpg",
+        category: "pictures",
     },
     {
         img: "/assets/gallery/ui/kundu.jpg",
-        category: "banner",
+        category: "design",
     },
     {
-        img: "/assets/gallery/banners/hp-banner.jpg",
-        category: "banner",
-    },
-    {
-        img: "/assets/gallery/banners/gmr-ing.jpg",
-        category: "banner",
+        img: "/assets/gallery/fia_team.jpg",
+        category: "pictures",
     },
     {
         img: "/assets/gallery/chill_code.jpg",
-        category: "background",
+        category: "code",
     },
     {
-        img: "/assets/gallery/esfera.png",
-        category: "background",
-    },
-    {
-        img: "/assets/gallery/kunduroom.jpg",
-        category: "blender",
-    },
-    {
-        img: "/assets/gallery/ui/helix.jpeg",
-        category: "software",
+        img: "/assets/gallery/ms_code.jpg",
+        category: "code",
     },
     {
         img: "/assets/gallery/ui/hypr-vim.png",
         category: "os",
+    },
+    {
+        img: "/assets/gallery/esfera.png",
+        category: "design",
+    },
+    {
+        img: "/assets/gallery/kunduroom.jpg",
+        category: "design",
+    },
+    {
+        img: "/assets/gallery/ui/helix.jpeg",
+        category: "code",
     },
 ];

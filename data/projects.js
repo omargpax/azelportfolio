@@ -23,17 +23,6 @@ export const projects = [
     },
     {
         num: "03",
-        category: "blender",
-        title: "Kundu Project",
-        description:
-            "In this project I test my skills with the Blender tool. I used it mainly for video editing as a studio background.",
-        stack: [{ name: "Blender" }, { name: "Camtasia" }],
-        image: "/assets/gallery/kunduroom.jpg",
-        live: "",
-        github: "",
-    },
-    {
-        num: "04",
         category: "BSA Architecture",
         title: "BSA Architecture",
         description:
@@ -44,3 +33,16 @@ export const projects = [
         github: "https://github.com/citseOfficial/bootstrap-sandbox-architecture",
     },
 ];
+
+export const otherProjects = [
+    {
+        num: "01",
+        category: "blender",
+        title: "Blender Room",
+        description:
+            "In this project I test my skills with the Blender tool. I used it mainly for video editing as a studio background.",
+        stack: [{ name: "Blender" }, { name: "Camtasia" }],
+        image: "/assets/gallery/kunduroom.jpg",
+        href: "",
+    },
+]

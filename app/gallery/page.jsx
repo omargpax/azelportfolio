@@ -1,6 +1,5 @@
 "use client";
 
-import { motion } from "framer-motion";
 import Image from "next/image";
 import { gallery } from "@/data/gallery";
 import { useState, useEffect } from "react";
@@ -35,13 +34,13 @@ function Gallery() {
                             return (
                                 <li
                                     key={index}
-                                    className="w-[100%] h-[250px] rounded-xl overflow-hidden relative"
+                                    className="w-[100%] h-[250px] rounded-xl overflow-hidden relative group"
                                 >
                                     <Image
                                         src={item.img}
                                         fill
-                                        className="object-cover"
-                                        alt=""
+                                        className="object-cover transition-transform duration-300 group-hover:scale-102 ease-in-out"
+                                        alt={item.category}
                                     />
                                 </li>
                             );
