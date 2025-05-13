@@ -1,34 +1,34 @@
 import { FaJava, FaFigma, FaJs } from "react-icons/fa";
 import { DiMysql, DiIllustrator } from "react-icons/di";
-import { SiNextdotjs, SiSpring, SiDotnet } from "react-icons/si";
+import { SiNextdotjs, SiSpring, SiDotnet, SiSentry, SiAdobephotoshop } from "react-icons/si";
 
 export const experience = {
     icon: "/assets/resume/badge.svg",
-    title: "My experience",
+    title: "Experience",
     description:
-        "Full Stack developer, specialized in backend development. With knowledge of Java and C#, I excel in agile development and collaborative problem solving.",
+        "Full Stack developer, with knowledge of Java and C#, I excel in agile development and collaborative problem solving.",
     items: [
         {
             company: "A&P S.A.C.",
             position: "Java Backend Developer",
-            duration: "6 months - 2023",
+            duration: "part-time / 2023",
         },
         {
             company: "IATec",
             position: "Full Stack Developer intern",
-            duration: "2022 - 2023",
+            duration: "part time / 2022 - 2023",
         },
     ],
 };
 
 export const education = {
     icon: "/assets/resume/cap.svg",
-    title: "My education",
+    title: "Education",
     description:
         "Regulated training and certifications that have allowed me to acquire the knowledge and skills necessary to develop software.",
     items: [
         {
-            institution: "Universidad Peruana Unión (UPeU)",
+            institution: "UPeU",
             degree: "Bach. Systems Engineering",
             duration: "2020 - 2024",
         },
@@ -36,7 +36,7 @@ export const education = {
 };
 
 export const skills = {
-    title: "My skills",
+    title: "Skills",
     description:
         "In this section you will find the technology stack that I master and use to design and develop.",
     skillList: [
@@ -65,12 +65,20 @@ export const skills = {
             name: "Spring",
         },
         {
+            icon: <SiSentry />,
+            name: "Sentry",
+        },
+        {
             icon: <FaFigma />,
             name: "Figma",
         },
         {
             icon: <DiIllustrator />,
             name: "Illustrator",
+        },
+        {
+            icon: <SiAdobephotoshop />,
+            name: "Photoshop",
         },
     ],
 };
