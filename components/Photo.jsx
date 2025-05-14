@@ -11,7 +11,7 @@ function Photo() {
                 <link rel="preload" href="/assets/avatar.png" as="image" />
             </Head>
 
-            <div className="w-full h-full relative">
+            <div className="w-full h-full relative z-0">
                 <motion.div
                     initial={{ opacity: 0 }}
                     animate={{

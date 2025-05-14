@@ -7,7 +7,7 @@ import MobileNav from "./MobileNav";
 
 const Header = () =>{
     return (
-        <nav className="fixed w-full top-0 left-0 py-4 md:py-6 text-white bg-gray-950 z-50 shadow-sm border-b-2 border-gray-900 px-6 md:px-4">
+        <nav className="fixed w-full top-0 left-0 py-4 text-white bg-gray-950 z-50 shadow-sm border-b-2 border-gray-900 px-6 md:px-4">
             <div className="container mx-auto flex justify-between items-center">
                 {/*Logo*/}
                 <Link href="/">                    
@@ -17,8 +17,8 @@ const Header = () =>{
                 {/* desktop nav & hire me button */}
                 <div className="hidden xl:flex items-center gap-8">
                     <Nav/>
-                    <Link href="mailto:omargpax.dev@gmail.com">
-                        <Button>Let's talk</Button>
+                    <Link href="mailto:omargpax.dev@gmail.com" className="bg-blue-500 text-gray-900 px-3 hover:bg-blue-600 cursor-pointer py-3 font-semibold rounded-full">
+                        Let's talk
                     </Link>
                 </div>
 
