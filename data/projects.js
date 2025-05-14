@@ -1,25 +1,25 @@
 export const projects = [
     {
         num: "01",
-        category: "Creator Badge",
-        title: "Creator badge generator",
-        description:
-            "Open source 'creator-badge' project for designing unique badges that enhance your web presence as a content creator 🪪.",
-        stack: [{ name: "Nextjs" }, { name: "JS" }, { name: "Figma" }],
-        image: "/assets/work/creator-badge.png",
-        live: "https://creator-badge.vercel.app",
-        github: "https://github.com/omargpax/creator-badge",
-    },
-    {
-        num: "02",
         category: "Kundu images",
         title: "image search engine",
         description:
             "First version of kundu like a engine search. This site uses external APIs.",
-        stack: [{ name: "Figma" }, { name: "JavaScript" }, { name: "Html" }, { name: "Css" }],
+        stack: [{ name: "JavaScript" }, { name: "Html" }, { name: "Css" }],
         image: "/assets/work/kundu-images.png",
         live: "https://kundu-images.pages.dev/",
         github: "https://github.com/omargpax/kundu-api",
+    },
+    {
+        num: "02",
+        category: "Creator Badge",
+        title: "Creator badge generator",
+        description:
+            "Open source 'creator-badge' project for designing unique badges that enhance your web presence as a content creator 🪪.",
+        stack: [{ name: "Nextjs" }, { name: "JavaScript" }, { name: "Tailwind" }],
+        image: "/assets/work/creator-badge.png",
+        live: "https://creator-badge.vercel.app",
+        github: "https://github.com/omargpax/creator-badge",
     },
     {
         num: "03",
@@ -27,7 +27,7 @@ export const projects = [
         title: "BSA Architecture",
         description:
             "Generates custom backend architectures with Java and Spring Boot, based on system/client requirements.",
-        stack: [{ name: "Nextjs" }, { name: "GPT-4o" }, { name: "Java" }],
+        stack: [{ name: "Nextjs" }, { name: "GPT-4o" }, { name: "TypeScript" }, { name: "Tailwind" }],
         image: "/assets/work/bsa.png",
         live: "https://bootstrap-sandbox-architecture.pages.dev/",
         github: "https://github.com/citseOfficial/bootstrap-sandbox-architecture",
