@@ -2,51 +2,42 @@
 
 import Image from "next/image";
 import { gallery } from "@/data/gallery";
-import { useState, useEffect } from "react";
+import { Heart } from 'lucide-react';
+import { useState } from "react";
 
 function Gallery() {
-    const [isLoading, setIsLoading] = useState(true);
+    const [loaded, setLoaded] = useState(Array(gallery.length).fill(false));
 
-    useEffect(() => {
-        const timer = setTimeout(() => {
-            setIsLoading(false);
-        }, 1200); // 1.2s loading simulation
-        return () => clearTimeout(timer);
-    }, []);
+    const handleImageLoad = (idx) => {
+        setLoaded((prev) => {
+            const updated = [...prev];
+            updated[idx] = true;
+            return updated;
+        });
+    };
 
     return (
-        <div
-            className="min-h-[80vh] flex py-12 xl:py-0 font-jetbrains px-6 md:px-0"
-        >
+        <div className="min-h-[80vh] flex py-12 xl:py-0 font-jetbrains px-6 md:px-0">
             <div className="container mx-auto w-full h-full pb-12">
-                {isLoading ? (
-                    <ul className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 xl:gap-6">
-                        {Array.from({ length: 12 }).map((_, index) => (
-                            <li
-                                key={index}
-                                className="w-[100%] h-[250px] rounded-xl bg-gray-800 animate-pulse"
-                            ></li>
-                        ))}
-                    </ul>
-                ) : (
-                    <ul className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 xl:gap-6">
-                        {gallery.map((item, index) => {
-                            return (
-                                <li
-                                    key={index}
-                                    className="w-[100%] h-[250px] rounded-xl overflow-hidden relative group"
-                                >
-                                    <Image
-                                        src={item.img}
-                                        fill
-                                        className="object-cover transition-transform duration-300 group-hover:scale-102 ease-in-out"
-                                        alt={item.category}
-                                    />
-                                </li>
-                            );
-                        })}
-                    </ul>
-                )}
+                <ul className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 xl:gap-6">
+                    {gallery.map((item, index) => (
+                        <li
+                            key={index}
+                            className="w-[100%] h-[250px] rounded-xl overflow-hidden relative group"
+                        >
+                            {!loaded[index] && (
+                                <div className="absolute inset-0 bg-gray-800 animate-pulse z-10" />
+                            )}
+                            <Image
+                                src={item.img}
+                                fill
+                                className={`object-cover transition-transform duration-300 group-hover:scale-102 ease-in-out ${!loaded[index] ? 'invisible' : 'visible'}`}
+                                alt={item.category}
+                                onLoad={() => handleImageLoad(index)}
+                            />
+                        </li>
+                    ))}
+                </ul>
             </div>
         </div>
     );
