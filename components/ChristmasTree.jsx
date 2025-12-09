@@ -22,7 +22,7 @@ function TreeCluster({ className = "", sizes = [50, 70, 50], offsets = [] }) {
 
 const ChristmasTree = () => {
     return (
-        <div className="absolute w-full bottom-0 left-0 flex items-end justify-between px-4 md:px-8 lg:px-16 top-10">
+        <div className="fixed -z-1 w-full bottom-0 left-0 flex items-end justify-between px-4 md:px-8 lg:px-16 top-10 opacity-90">
             {/* left cluster */}
             <TreeCluster className="left-4 -z-10" sizes={[50, 70, 50]} offsets={["relative -right-3", "", "relative -left-3"]} />
 
