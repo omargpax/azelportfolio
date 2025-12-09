@@ -9,14 +9,22 @@ export const experience = {
         "Full Stack developer, with knowledge of Java and C#, I excel in agile development and collaborative problem solving.",
     items: [
         {
+            company: "ADRA PERÚ",
+            position: "Analyst Developer",
+            duration: "Full time / 2025 - present",
+            isCurrent: true,
+        },
+        {
             company: "A&P S.A.C.",
             position: "Java Backend Developer",
-            duration: "part-time / 2023",
+            duration: "Part-time / 2023",
+            isCurrent: false,
         },
         {
             company: "IATec",
             position: "Full Stack Developer intern",
-            duration: "part time / 2022 - 2023",
+            duration: "Part time / 2022 - 2023",
+            isCurrent: false,
         },
     ],
 };

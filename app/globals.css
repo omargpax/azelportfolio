@@ -116,23 +116,28 @@
   --sidebar-border: oklch(0.279 0.041 260.031);
   --sidebar-ring: oklch(0.446 0.043 257.281);
 }
- 
+
 @layer base {
   * {
     @apply border-border outline-ring/50;
   }
+
   body {
     @apply bg-gray-950 text-white;
   }
+
   .h1 {
     @apply text-[48px] xl:text-[80px] leading-[1.1] font-semibold;
   }
+
   .h2 {
     @apply text-[36px] xl:text-[48px] leading-[1.1] font-semibold;
   }
+
   .h3 {
     @apply text-[20px] xl:text-[24px] leading-[1.1] font-semibold;
   }
+
   .text-outline {
     -webkit-text-stroke: 1px rgb(119, 108, 156);
   }
@@ -142,30 +147,50 @@
   0% {
     background-position: 0 0;
   }
-  50%{
+
+  50% {
     background-position: 20px 20px;
   }
+
   100% {
     background-position: 40px 40px;
   }
 }
 
 .animated-lines-bg {
-  position: fixed; 
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  z-index: -1; 
-  
-  background-image: repeating-linear-gradient(
-    -45deg,
-    #eee,
-    #eee 1px,
-    transparent 1.5px, 
-    transparent 100px
-  );
-  
+  z-index: -1;
+
+  background-image: repeating-linear-gradient(-45deg,
+      #eee,
+      #eee 1px,
+      transparent 1.5px,
+      transparent 100px);
+
   background-size: 40px 40px;
   animation: moveLines 2s linear infinite;
+}
+
+.snowflake {
+  position: fixed;
+  top: 0;
+  left: 0;
+  color: white;
+  width: 100%;
+  height: 100%;
+  font-size: 10px;
+  user-select: none;
+  animation-name: fall;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+@keyframes fall {
+  to {
+    transform: translateY(100vh);
+  }
 }

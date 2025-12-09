@@ -32,16 +32,21 @@ const Resume = () => {
                 return (
                   <li
                     key={index}
-                    className="bg-gray-900 h-[150px] py-6 px-10 rounded-xl flex flex-col justify-center items-center lg:items-start gap-1 overflow-hidden"
+                    className={`relative h-[150px] py-6 px-10 rounded-xl flex flex-col justify-center items-center lg:items-start gap-1 overflow-hidden transition-all duration-300 bg-gray-900 ${item.isCurrent ? 'shadow-2xl bg-gradient-to-r from-gray-900 to-cyan-950' : ''}`}
                   >
-                    <span className="text-cyan-500 font-semibold">
+                    {item.isCurrent && (
+                      <span className="absolute top-4 right-4 bg-cyan-500 text-black text-xs font-semibold px-3 py-1 rounded-full">
+                        Current
+                      </span>
+                    )}
+                    <span className={`font-semibold ${item.isCurrent ? 'text-cyan-500' : 'text-gray-400'}`}>
                       {item.duration}
                     </span>
                     <h3 className="text-xl max-w-[260px] min-h-[60px] text-center lg:text-left">
                       {item.position}
                     </h3>
                     <div className="flex items-center gap-3">
-                      <span className="w-[6px] h-[6px] rounded-full bg-cyan-500"></span>
+                      <span className={`w-[6px] h-[6px] rounded-full ${item.isCurrent ? 'bg-cyan-500' : 'bg-gray-500'}`}></span>
                       <p className="text-white/60">{item.company}</p>
                     </div>
                   </li>
