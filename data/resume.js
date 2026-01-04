@@ -10,7 +10,7 @@ export const experience = {
     items: [
         {
             company: "ADRA PERÚ",
-            position: "Analyst Developer",
+            position: "Analista programador",
             duration: "Full time / 2025 - present",
             isCurrent: true,
         },
