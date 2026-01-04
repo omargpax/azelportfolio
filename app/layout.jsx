@@ -2,9 +2,7 @@ import { Geist, Geist_Mono, JetBrains_Mono } from "next/font/google";
 import "./globals.css";
 import { SpeedInsights } from '@vercel/speed-insights/next';
 import { Analytics } from "@vercel/analytics/react"
-import LinesBackground from "@/components/LinesBackground";
-import ChristmasBg from "@/components/ChristmasBg";
-import ChristmasTree from "@/components/ChristmasTree";
+import SeasonalBackground from "@/components/SeasonalBackground";
 
 //components
 import Header from "@/components/Header";
@@ -75,15 +73,13 @@ export const metadata = {
 };
 
 export default function RootLayout({ children }) {
-  const isDecember = new Date().getMonth() === 11;
 
   return (
     <html lang="en">
       <body
         className={`${geistSans.variable} ${geistMono.variable} ${jetbrainsMono.variable} antialiased pt-[80px] md:pt-[120px] xl:pt-[150px]`}
       >
-        {isDecember ? <ChristmasBg /> : <LinesBackground />}
-        {isDecember && <ChristmasTree />}
+        <SeasonalBackground />
         <Header />
         {children}
         <Analytics />
