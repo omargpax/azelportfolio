@@ -144,10 +144,11 @@ export default function LinesBackground() {
             last = now;
             ctx.clearRect(0, 0, width, height);
 
-            const g = ctx.createLinearGradient(0, 0, 0, height);
-            g.addColorStop(0, "rgba(6,8,12,0.9)");
-            g.addColorStop(1, "rgba(2,6,14,0.9)");
-            ctx.fillStyle = g;
+            // Use the parent element background (tailwind `bg-gray-950`) when available
+            const parentBg = canvas.parentElement
+                ? getComputedStyle(canvas.parentElement).backgroundColor
+                : null;
+            ctx.fillStyle = parentBg && parentBg !== "rgba(0, 0, 0, 0)" ? parentBg : "rgba(6,8,12,1)";
             ctx.fillRect(0, 0, width, height);
 
             for (let i = 0; i < particles.length; i++) {
