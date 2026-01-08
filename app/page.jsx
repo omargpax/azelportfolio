@@ -57,7 +57,7 @@ const Home = () => {
             {/* social */}
             <div className="flex flex-col xl:flex-row items-center gap-8">
               <a
-                href="/omargpax_cv.pdf"
+                href="/omargpax_cv_EN_.pdf"
                 download
                 className="cursor-pointer"
                 aria-label="Download CV"
