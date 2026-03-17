@@ -37,7 +37,7 @@ export const education = {
     items: [
         {
             institution: "UPeU",
-            degree: "Bach. Systems Engineering",
+            degree: "Systems Engineering",
             duration: "2020 - 2024",
         },
     ],

@@ -43,7 +43,7 @@ const Home = () => {
           {/* SUMMARY */}
           <div className="text-center xl:text-left order-2 xl:order-none">
             <span className="text-xl animate-pulse">
-              Software Developer<sub className="text-xs">.junior</sub>
+              Systems Engineer<sub className="text-xs">.dev</sub>
             </span>
             <h1 className="h1 mb-6">
               Hello I'm <br />
