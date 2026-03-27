@@ -6,6 +6,8 @@ import { notFound } from "next/navigation"
 import Link from "next/link";
 import CoverImage from "./CoverImage"   
 
+export const dynamic = 'force-dynamic'; // Forzar renderizado dinámico en cada request
+
 export async function generateStaticParams() {
   const { data } = await supabase
     .from('posts')
