@@ -63,7 +63,7 @@ const PostsClient = ({ posts }) => {
               focus:outline-none focus:border-cyan-500 transition-colors
               text-white md:w-48 cursor-pointer"
                     >
-                        <option value="">Todas las etiquetas</option>
+                        <option value="">All tags</option>
                         {allTags.map(tag => (
                             <option key={tag} value={tag}>{tag}</option>
                         ))}
@@ -77,8 +77,8 @@ const PostsClient = ({ posts }) => {
               focus:outline-none focus:border-cyan-500 transition-colors
               text-white md:w-44 cursor-pointer"
                     >
-                        <option value="desc">Más recientes</option>
-                        <option value="asc">Más antiguos</option>
+                        <option value="desc">Latest</option>
+                        <option value="asc">Oldest</option>
                     </select>
                 </div>
 
