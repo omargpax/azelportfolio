@@ -27,6 +27,16 @@ const PostPage = async ({ params }) => {
 
   return (
     <article className="container mx-auto font-jetbrains pb-16 px-6 md:px-0 lg:w-6xl xl:w-7xl">
+    
+    		{/* bakck */}
+                <div className="mb-8">
+                    <Link
+                        href="/posts"
+                        className="text-white/70 hover:text-white transition-colors underline"
+                    >
+                        ← Back to posts
+                    </Link>
+                </div>
 
       {/* Portada con lightbox */}
       {post.cover_image && (
