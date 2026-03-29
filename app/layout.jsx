@@ -24,7 +24,7 @@ const jetbrainsMono = JetBrains_Mono({
 });
 
 export const metadata = {
-  metadataBase: new URL('https://omargpax.vercel.app'),
+  metadataBase: new URL('https://omargpax.dev'),
   manifest: '/manifest.json',
   title: " Developer Portfolio | @omargpax",
   description: "I'm passionate about art and music. Oh and I'm also a developer. So, if you want to share something, here I am. God bless you ☕. Personal projects, ideas and more about @omargpax as a developer",
@@ -36,7 +36,7 @@ export const metadata = {
   openGraph: {
     title: "Developer Portfolio | @omargpax",
     description: "Peruvian developer specializing in modern web technologies. Check out my projects and let's collaborate!",
-    url: "https://omargpax.vercel.app",
+    url: "https://omargpax.dev",
     siteName: "Omargpax Portfolio",
     images: [
       {

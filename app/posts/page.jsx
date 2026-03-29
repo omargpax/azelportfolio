@@ -1,8 +1,6 @@
 import { supabase } from "@/lib/supabase"
 import PostsClient from "./PostsClient"
 
-export const dynamic = 'force-dynamic'; // Forzar renderizado dinámico en cada request
-
 const Posts = async () => {
   const { data: posts, error } = await supabase
     .from('posts')
