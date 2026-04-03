@@ -12,6 +12,17 @@ export const projects = [
     },
     {
         num: "02",
+        category: "Dashboard",
+        title: "iDash - Interactive Dashboard",
+        description:
+            "A data analysis dashboard built with react and some python scripts, providing interactive visualizations.",
+        stack: [{ name: "React" }, { name: "Tailwind" }, { name: "Python" }, { name: "Vite" }],
+        image: "/assets/work/idash-preview.png",
+        live: "https://dashboard.omargpax.dev",
+        github: "https://github.com/omargpax/interactive-dashboard",
+    },
+    {
+        num: "03",
         category: "Creator Badge",
         title: "Creator badge generator",
         description:
@@ -22,7 +33,7 @@ export const projects = [
         github: "https://github.com/omargpax/creator-badge",
     },
     {
-        num: "03",
+        num: "04",
         category: "BSA Architecture",
         title: "BSA Architecture",
         description:
