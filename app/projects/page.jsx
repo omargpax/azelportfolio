@@ -43,12 +43,12 @@ const Work = () => {
             <div className="w-full xl:w-[50%] xl:h-[460px] flex flex-col xl:justify-between order-2 xl:order-none">
               <div className="flex flex-col gap-[30px] h-[50%]">
                 {/* project number */}
-                <div className="text-8xl leading-none font-extrabold text-transparent text-outline">
+                <div className="font-extrabold leading-none text-transparent text-8xl text-outline">
                   {project.num}
                 </div>
                 {/* category */}
                 <h2 className="text-[42px] font-bold leading-none text-white group-hover:text-cyan-500 transition-all duration-500 capitalize">
-                  {project.category} project
+                  {project.title}
                 </h2>
                 {/* description */}
                 <p className="text-white/60">{project.description}</p>
@@ -71,7 +71,7 @@ const Work = () => {
                     <TooltipProvider delayDuration={100}>
                       <Tooltip>
                         <TooltipTrigger className="w-[50px] h-[50px] rounded-full bg-white/5 flex justify-center items-center group">
-                          <BsArrowUpRight className="text-white text-3xl group-hover:text-cyan-500" />
+                          <BsArrowUpRight className="text-3xl text-white group-hover:text-cyan-500" />
                         </TooltipTrigger>
                         <TooltipContent>
                           <p>Live project</p>
@@ -84,7 +84,7 @@ const Work = () => {
                     <TooltipProvider delayDuration={100}>
                       <Tooltip>
                         <TooltipTrigger className="w-[50px] h-[50px] rounded-full bg-white/5 flex justify-center items-center group">
-                          <BsGithub className="text-white text-3xl group-hover:text-cyan-500" />
+                          <BsGithub className="text-3xl text-white group-hover:text-cyan-500" />
                         </TooltipTrigger>
                         <TooltipContent>
                           <p>GitHub repo</p>
@@ -114,7 +114,7 @@ const Work = () => {
                         {/* overlay */}
                         <div></div>
                         {/* img */}
-                        <div className="relative w-full h-full rounded-xl overflow-hidden">
+                        <div className="relative w-full h-full overflow-hidden rounded-xl">
                           <Image
                             src={project.image}
                             fill

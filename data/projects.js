@@ -1,8 +1,19 @@
 export const projects = [
     {
         num: "01",
-        category: "Kundu images",
-        title: "image search engine",
+        category: "website",
+        title: "iDash - Interactive Dashboard",
+        description:
+            "A data analysis dashboard built with react and some python scripts, providing interactive visualizations.",
+        stack: [{ name: "React" }, { name: "Tailwind" }, { name: "Python" }, { name: "Vite" }, { name: "Open Source" }],
+        image: "/assets/work/idash-preview.png",
+        live: "https://dashboard.omargpax.dev",
+        github: "https://github.com/omargpax/interactive-dashboard",
+    },
+    {
+        num: "02",
+        category: "website",
+        title: "Kundu images",
         description:
             "First version of kundu like a engine search. This site uses external APIs.",
         stack: [{ name: "JavaScript" }, { name: "Html" }, { name: "Css" }],
@@ -11,30 +22,19 @@ export const projects = [
         github: "https://github.com/omargpax/kundu-api",
     },
     {
-        num: "02",
-        category: "Dashboard",
-        title: "iDash - Interactive Dashboard",
-        description:
-            "A data analysis dashboard built with react and some python scripts, providing interactive visualizations.",
-        stack: [{ name: "React" }, { name: "Tailwind" }, { name: "Python" }, { name: "Vite" }],
-        image: "/assets/work/idash-preview.png",
-        live: "https://dashboard.omargpax.dev",
-        github: "https://github.com/omargpax/interactive-dashboard",
-    },
-    {
         num: "03",
-        category: "Creator Badge",
+        category: "website",
         title: "Creator badge generator",
         description:
             "Open source 'creator-badge' project for designing unique badges that enhance your web presence as a content creator 🪪.",
-        stack: [{ name: "Nextjs" }, { name: "JavaScript" }, { name: "Tailwind" }],
+        stack: [{ name: "Nextjs" }, { name: "JavaScript" }, { name: "Tailwind" },  {name: "Open Source" }],
         image: "/assets/work/creator-badge.png",
         live: "https://creator-badge.vercel.app",
         github: "https://github.com/omargpax/creator-badge",
     },
     {
         num: "04",
-        category: "BSA Architecture",
+        category: "website",
         title: "BSA Architecture",
         description:
             "Generates custom backend architectures with Java and Spring Boot, based on system/client requirements.",
