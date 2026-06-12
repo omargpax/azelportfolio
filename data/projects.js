@@ -42,7 +42,7 @@ export const projects = [
     stackData: ["Pandas", "CSV ETL", "SQL aggregations", "Recharts"],
     metrics:
       "Reduced report generation from 2+ hours of manual work to on-demand, sub-second queries.",
-    image: "/assets/work/idash-cover.jpg",
+    image: "/assets/work/iDash-cover.jpg",
     live: "https://dashboard.omargpax.dev",
     github: "https://github.com/omargpax/interactive-dashboard",
   },
