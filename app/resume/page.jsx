@@ -1,15 +1,10 @@
 "use client";
 
 //components
-import {
-  TooltipContent,
-  TooltipTrigger,
-  TooltipProvider,
-  Tooltip,
-} from "@/components/ui/tooltip";
+import SkillGroup from "@/components/SkillGroup";
 import { ScrollArea } from "@/components/ui/scroll-area";
 import { motion } from "framer-motion";
-import { skills, experience, education } from "@/data/resume";
+import { skillGroups, experience, education } from "@/data/resume";
 
 const Resume = () => {
   return (
@@ -32,7 +27,7 @@ const Resume = () => {
                 return (
                   <li
                     key={index}
-                    className={`relative h-[150px] py-6 px-10 rounded-xl flex flex-col justify-center items-center lg:items-start gap-1 overflow-hidden transition-all duration-300 bg-gray-900 ${item.isCurrent ? 'shadow-2xl bg-gradient-to-r from-gray-900 to-cyan-950' : ''}`}
+                    className={`relative border h-[150px] py-6 px-10 rounded-xl flex flex-col justify-center items-center lg:items-start gap-1 overflow-hidden transition-all duration-300 ${item.isCurrent ? 'border-cyan-500/50 bg-cyan-500/5' : 'border-gray-500/50 bg-gray-500/5'}`}
                   >
                     {item.isCurrent && (
                       <span className="absolute top-4 right-4 bg-cyan-500 text-black text-xs font-semibold px-3 py-1 rounded-full">
@@ -66,7 +61,7 @@ const Resume = () => {
                 return (
                   <li
                     key={index}
-                    className="relative bg-gray-900 h-[160px] py-6 px-10 rounded-xl flex flex-col justify-center items-center lg:items-start gap-1 overflow-hidden"
+                    className="relative bg-gray-500/5 border border-gray-500/50 h-[160px] py-6 px-10 rounded-xl flex flex-col justify-center items-center lg:items-start gap-1 overflow-hidden"
                   >
                     <span className="text-cyan-500 font-semibold">{item.duration}</span>
                     <h3 className="text-xl max-w-[260px] min-h-[60px] text-center lg:text-left">
@@ -85,30 +80,25 @@ const Resume = () => {
 
         {/* skills */}
         <div className="px-4 flex flex-col gap-[30px] mt-14 mb-16">
-          <div className="flex flex-col gap-[30px] text-center sm:text-left">
-            <h3 className="text-2xl font-bold">{skills.title}</h3>
+          <div className="flex flex-col gap-2 text-center sm:text-left">
+            <h3 className="text-2xl font-bold">Technical Skills</h3>
+            <p className="text-white/60 max-w-[600px]">
+              Grouped by domain — each tool used in a specific context,
+              not just listed.
+            </p>
           </div>
-          <ul className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 xl:grid-cols-5 gap-4 sm:gap-4">
-            {skills.skillList.map((skill, index) => {
-              return (
-                <li key={index}>
-                  <TooltipProvider>
-                    <Tooltip>
-                      <TooltipTrigger className="w-full h-[150px] bg-gray-900 rounded-xl flex justify-center items-center group">
-                        <div className="text-6xl group-hover:text-cyan-500 transition-all duration-300">
-                          {skill.icon}
-                        </div>
-                      </TooltipTrigger>
-                      <TooltipContent>
-                        <p className="capitalize">{skill.name}</p>
-                      </TooltipContent>
-                    </Tooltip>
-                  </TooltipProvider>
-                </li>
-              );
-            })}
-          </ul>
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
+            {skillGroups.map((group, i) => (
+              <SkillGroup
+                key={i}
+                group={group.group}
+                color={group.color}
+                skills={group.skills}
+              />
+            ))}
+          </div>
         </div>
+
       </div>
     </motion.div>
   );

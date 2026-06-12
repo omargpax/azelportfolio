@@ -4,37 +4,28 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useState } from 'react';
 
+// Reemplaza el array `links` en Nav.jsx y MobileNav.jsx
 const links = [
-    {
-        name: "home",
-        path: "/",
-    },
-    {
-        name: "gallery",
-        path: "/gallery",
-    },
-    {
-        name: "resume",
-        path: "/resume",
-    },
-    {
-        name: "work",
-        subLinks: [
-            {
-                name: "projects",
-                path: "/projects",
-            },
-            {
-                name: "services",
-                path: "/services",
-            }
-        ]
-    },
-    {
-        name: "posts",
-        path: "/posts",
-    }
-]
+  {
+    name: "home",
+    path: "/",
+  },
+  {
+    name: "projects",
+    path: "/projects",
+  },
+  {
+    name: "resume",
+    path: "/resume",
+  },
+  {
+    name: "posts",
+    path: "/posts",
+  },
+  // "work" dropdown eliminado — projects directo
+  // "gallery" movido fuera del nav principal
+  // "services" renombrado a contacto o eliminado del nav
+];
 
 export const Nav = () => {
     const pathname = usePathname();

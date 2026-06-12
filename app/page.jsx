@@ -1,9 +1,9 @@
 "use client";
 
+import Link from "next/link";
 import React, { useEffect, useMemo, useState } from "react";
 import { Button } from "@/components/ui/button";
 import { FiDownload } from "react-icons/fi";
-import Image from "next/image";
 // Components
 import Social from "@/components/Social";
 import Photo from "@/components/Photo";
@@ -43,19 +43,51 @@ const Home = () => {
           {/* SUMMARY */}
           <div className="text-center xl:text-left order-2 xl:order-none">
             <span className="text-xl animate-pulse">
-              Systems Engineer<sub className="text-xs">.dev</sub>
+              <span className="text-sm font-mono text-white/60 tracking-wide uppercase mb-2 block">
+                Backend Developer · Data Engineer
+              </span>
             </span>
             <h1 className="h1 mb-6">
               Hello I'm <br />
               <span className="text-cyan-500">Omar Azel</span>
             </h1>
-            <p className="max-w-[500px] mb-9 text-white/80 font-mono">
-              I'm passionate about art and music. Oh and I'm also a developer. So,
-              if you want to share something, here I am. <b>God bless you ☕</b>.
+            <p className="max-w-[500px] mb-4 text-white/80 font-mono text-sm leading-relaxed">
+              I build REST APIs and data pipelines using{" "}
+              <span className="text-white/90">Java</span>,{" "}
+              <span className="text-white/90">Spring Boot</span>,{" "}
+              <span className="text-white/90">Python</span> and{" "}
+              <span className="text-white/90">SQL</span>.
+              I work at the layer where backend reliability
+              and data insight meet.
             </p>
+
+            {/* Stack pills */}
+            <div className="flex flex-wrap gap-2 mb-8 justify-center xl:justify-start">
+              {["Java", "Spring Boot", "MySQL", "Python", "Pandas", "REST APIs"].map((t) => (
+                <span
+                  key={t}
+                  className="text-xs px-3 py-1 bg-white/5 border border-white/10 
+                             rounded-full text-white/60 font-mono"
+                >
+                  {t}
+                </span>
+              ))}
+            </div>
 
             {/* social */}
             <div className="flex flex-col xl:flex-row items-center gap-8">
+              <Link href="/projects">
+                <Button
+                  variant="default"
+                  size="lg"
+                  className="uppercase flex items-center gap-2 
+                             bg-cyan-600 text-gray-900 hover:bg-cyan-400 
+                             cursor-pointer"
+                >
+                  View Projects
+                </Button>
+              </Link>
+
               <a
                 href="/omargpax_cv_EN_.pdf"
                 download

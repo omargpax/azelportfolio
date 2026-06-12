@@ -26,33 +26,30 @@ const jetbrainsMono = JetBrains_Mono({
 export const metadata = {
   metadataBase: new URL('https://omargpax.dev'),
   manifest: '/manifest.json',
-  title: " Developer Portfolio | @omargpax",
-  description: "I'm passionate about art and music. Oh and I'm also a developer. So, if you want to share something, here I am. God bless you ☕. Personal projects, ideas and more about @omargpax as a developer",
+  title: "Omar Guerrero | Backend Developer & Data Engineer",
+  description:
+    "Backend Developer specializing in Java, Spring Boot, and data systems. " +
+    "Building REST APIs and data pipelines that drive real decisions. " +
+    "Based in Trujillo, Peru. Available for remote roles.",
   author: "Omar A. Guerrero",
   icons: {
     icon: '/favicon.ico',
     apple: '/logo.png',
   },
-  openGraph: {
-    title: "Developer Portfolio | @omargpax",
-    description: "Peruvian developer specializing in modern web technologies. Check out my projects and let's collaborate!",
+   openGraph: {
+    title: "Omar Guerrero | Backend Developer & Data Engineer",
+    description:
+      "Java · Spring Boot · Python · SQL. " +
+      "Building systems that process data into decisions.",
     url: "https://omargpax.dev",
-    siteName: "Omargpax Portfolio",
-    images: [
-      {
-        url: "/preview.png",
-        width: 1200,
-        height: 630,
-        alt: "Omargpax Portfolio Preview",
-      },
-    ],
-    locale: "en_US",
-    type: "website",
+    images: [{ url: "/preview.png", width: 1200, height: 630 }],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Developer Portfolio | @omargpax",
-    description: "Check out my developer portfolio with projects at the intersection of code, art and music",
+    title: "Omar Guerrero | Backend Developer & Data Engineer",
+    description:
+      "Java · Spring Boot · Python · SQL. " +
+      "Building systems that process data into decisions.",
     creator: "@omargpax",
     images: ["/preview.png"],
   },
