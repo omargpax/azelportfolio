@@ -13,6 +13,10 @@ const nextConfig = {
       },
       {
         protocol: 'https',
+        hostname: '*.omargpax.dev',
+      },
+      {
+        protocol: 'https',
         hostname: '**.supabase.co',  // para cuando uses Supabase Storage
       },
       {
