@@ -9,14 +9,24 @@ export const experience = {
     "Backend and data roles where I built systems and worked with real operational data.",
   items: [
     {
-      company: "ADRA Perú",
-      position: "Systems Analyst",
-      duration: "2025 – Present",
+      company: "NTT DATA Perú",
+      position: "Rising Software Engineer",
+      duration: "2026 – Present",
       isCurrent: true,
+      bullets: [
+        "Develop and maintain backend services for enterprise clients",
+        "Translate operational requirements into backend technical solutions",
+        "Collaborate with cross-functional teams to deliver software solutions",
+      ],
+    },
+    {
+      company: "ADRA Perú",
+      position: "Developer Analyst",
+      duration: "2025 – 2026",
+      isCurrent: false,
       bullets: [
         "Maintain and extend operational systems supporting organizational workflows",
         "Analyze system data to identify process bottlenecks",
-        "Translate operational requirements into backend technical solutions",
       ],
     },
     {
