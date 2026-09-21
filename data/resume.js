@@ -32,7 +32,7 @@ export const experience = {
     {
       company: "A&P S.A.C.",
       position: "Java Backend Developer",
-      duration: "2023 · Part-time",
+      duration: "2023 - 2024",
       isCurrent: false,
       bullets: [
         "Built REST API endpoints with Spring Boot for internal processes",
